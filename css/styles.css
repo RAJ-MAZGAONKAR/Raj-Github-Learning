@@ -21,6 +21,10 @@ html,body{height:100%;margin:0;font-family:Segoe UI,Roboto,Arial,sans-serif;back
 .primary:hover{background:var(--accent-2)}
 #error{color:var(--accent-2);font-size:.88rem;height:1.2rem;margin-top:.4rem}
 
+/* Page title */
+.page-title{position:relative;z-index:2;text-align:center;margin:1.5rem 0 0}
+.page-title h2{color:var(--accent-2);font-size:2.4rem;line-height:1;font-weight:800;margin:0;text-transform:none;letter-spacing:-0.5px;text-shadow:0 2px 6px rgba(128,0,0,0.08)}
+
 /* Background bubble animation */
 .bg{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:1}
 .bubble{
@@ -55,4 +59,7 @@ html,body{height:100%;margin:0;font-family:Segoe UI,Roboto,Arial,sans-serif;back
   100%{transform:translateY(-110vh) translateX(-6vw) scale(1) rotate(90deg);opacity:.65}
 }
 
-@media (max-width:360px){.login-card{width:100%;padding:1rem}}
+@media (max-width:480px){
+  .page-title h2{font-size:1.6rem}
+  .login-card{width:100%;padding:1rem}
+}
